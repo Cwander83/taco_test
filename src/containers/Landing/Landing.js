@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+//import { Link, Router } from '@reach/router';
 
 import './Landing.css';
 
@@ -6,10 +7,27 @@ import StreetTacos from '../../assests/images/MSC.jpg';
 
 import Header from '../../components/Header/Header';
 import Auxilitary from '../../hoc/auxilitary';
-import Return from '../../components/Login/Return/Return';
-import SignUp from '../../components/Login/SignUp/SignUp';
+import Login from '../../components/Login/Login';
+import Modal from '../../components/Modal/Modal';
+import SignUpForm from '../../components/Login/SignUpForm/SignUpForm';
+import ReturnForm from '../../components/Login/ReturnForm/ReturnForm';
 
 const Landing = props => {
+	const [modalState, setModalState] = useState(false);
+	const [signUp, setSignUp] = useState();
+
+	const openModal = () => {
+		setModalState(true);
+	};
+
+	const closeModal = () => {
+		setModalState(false);
+	};
+
+	const signUpHandler = x => {
+		setSignUp(x);
+	};
+
 	return (
 		<Auxilitary>
 			<Header />
@@ -28,10 +46,21 @@ const Landing = props => {
 				</div>
 			</div>
 			<div className="btnRow">
-				<SignUp />
+				<Login openModal={openModal} click={x => signUpHandler(true)}>
+					Sign Up
+				</Login>
 
-				<Return />
+				<Login openModal={openModal} click={x => signUpHandler(false)}>
+					Returning Users
+				</Login>
 			</div>
+			<Modal
+				modalState={modalState}
+				openModal={openModal}
+				closeModal={closeModal}
+			>
+				{signUp ? <SignUpForm /> : <ReturnForm />}
+			</Modal>
 		</Auxilitary>
 	);
 };
