@@ -1,0 +1,26 @@
+.table img {
+	width: 80%;
+	margin: 0 9px;
+}
+.table img:hover {
+	filter: brightness(60%);
+}
+
+.table {
+	display: flex;
+	width: 80%;
+	flex-direction: column;
+	margin: auto;
+}
+.row {
+	width: 100%;
+	text-align: center;
+	margin: 9px auto;
+	display: flex;
+}
+
+.imgholder {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+}
