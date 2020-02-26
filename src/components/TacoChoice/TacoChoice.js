@@ -1,7 +1,5 @@
 import React from 'react';
 
-import './TacoChoice.css';
-
 const tacoChoice = React.memo(props => {
 	return (
 		<>

@@ -66,7 +66,7 @@ const ReturnForm = memo(({ history, props }) => {
 		[history]
 	);
 
-	console.log('return form');
+
 	return (
 		<>
 			<h1 style={styles.header}>Welcome Back,</h1>

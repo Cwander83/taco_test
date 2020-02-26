@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 
-
 import './Landing.css';
 
 import StreetTacos from '../../assests/images/MSC.jpg';

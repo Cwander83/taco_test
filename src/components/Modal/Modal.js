@@ -14,8 +14,6 @@ const customStyles = {
 };
 
 const modal = React.memo(props => {
-
-
 	return (
 		<div>
 			<Modal
@@ -23,7 +21,6 @@ const modal = React.memo(props => {
 				isOpen={props.modalState}
 				onRequestClose={props.closeModal}
 				style={customStyles}
-				contentLabel="Example Modal"
 			>
 				<div>{props.children}</div>
 			</Modal>
