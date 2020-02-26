@@ -14,3 +14,20 @@
 	border-radius: 25px;
 	text-transform: uppercase;
 }
+
+
+.dashTitle {
+	width: 100%;
+	text-align: center;
+}
+
+.userEmail { 
+	color: red;
+	
+}
+
+@media (max-height: 734px) {
+	.SignOutBtn {
+		font-size: 9px;
+	}
+}

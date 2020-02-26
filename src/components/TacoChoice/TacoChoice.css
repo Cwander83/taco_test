@@ -1,0 +1,11 @@
+.choice {
+	width: 40%;
+    text-align: center;
+    margin: auto;
+    font-size: 22px;
+}
+
+
+.chioceSpan {
+    color: red;
+}

@@ -2,8 +2,10 @@ import React, { memo, useState, useCallback } from 'react';
 import { useForm } from 'react-hook-form';
 import firebase from '../../../firebase.js';
 import { withRouter } from 'react-router';
-//import { AuthContext } from '../../../context/auth-context';
-//import LinkToDashboard from '../../LinkToDashboard/LinkToDashboard'
+
+import '../Login.css'
+
+import CenterContainer from '../../../hoc/CenterContainer';
 
 const styles = {
 	header: {
@@ -14,14 +16,28 @@ const styles = {
 	},
 	error: {
 		color: 'red',
+		margin: '2px'
 	},
+	input: {
+		margin: '4px',
+	},
+	submit: {
+		border: 'black solid 1px',
+		backgroundColor: 'white',
+		fontFamily: 'inherit',
+		fontSize: '16px'
+	},
+		form: {
+
+			
+		},
+		
 };
 
 const SignUpForm = memo(({ history, props }) => {
 	const [dbError, setDbError] = useState('');
 
 	const { register, errors, handleSubmit } = useForm();
-	//const [showLink, setShowLink] = useState();
 
 	const onSubmit = useCallback(
 		data => {
@@ -59,11 +75,10 @@ const SignUpForm = memo(({ history, props }) => {
 							break;
 						default:
 							setDbError(error.message);
-							console.log(error.message);
+							console.error(error.message);
 							break;
 					}
 				});
-
 		},
 		[history]
 	);
@@ -73,43 +88,47 @@ const SignUpForm = memo(({ history, props }) => {
 			<>
 				<h1 style={styles.header}>Lets get you signed up</h1>
 				<span style={styles.error}>{dbError}</span>
-				<form onSubmit={handleSubmit(onSubmit)}>
-					<label style={styles.label}>
-						email
-						<input
-							name="email"
-							ref={register({ required: true, pattern: /^\S+@\S+\.\S+$/ })}
-						/>
-					</label>
-					<span style={styles.error}>
-						{errors.email &&
-							errors.email.type === 'required' &&
-							'email is required'}
-						{errors.email &&
-							errors.email.type === 'pattern' &&
-							'bob@email.com format is required'}
-					</span>
-					<label style={styles.label}>
-						password:
-						<input
-							name="password"
-							ref={register({
-								required: true,
-								minLength: 8,
-							})}
-						/>
-					</label>
-					<span style={styles.error}>
-						{errors.password &&
-							errors.password.type === 'required' &&
-							'Your input is required'}
-						{errors.password &&
-							errors.password.type === 'minLength' &&
-							'At least 8 characters is required'}
-					</span>
+				<CenterContainer>
+					<form style={styles.form} className="form" onSubmit={handleSubmit(onSubmit)}>
+						<label style={styles.label}>
+							email:
+							<input
+								style={styles.input}
+								name="email"
+								ref={register({ required: true, pattern: /^\S+@\S+\.\S+$/ })}
+							/>
+						</label>
+						<span style={styles.error}>
+							{errors.email &&
+								errors.email.type === 'required' &&
+								'email is required'}
+							{errors.email &&
+								errors.email.type === 'pattern' &&
+								'bob@email.com format is required'}
+						</span>
+						<label style={styles.label}>
+							password:
+							<input
+								style={styles.input}
+								name="password"
+								ref={register({
+									required: true,
+									minLength: 8,
+								})}
+							/>
+						</label>
+						<span style={styles.error}>
+							{errors.password &&
+								errors.password.type === 'required' &&
+								'Your input is required'}
+							{errors.password &&
+								errors.password.type === 'minLength' &&
+								'At least 8 characters is required'}
+						</span>
 
-					<input type="submit" />
-				</form>
+						<input style={styles.submit} type="submit" value="let's go" />
+					</form>
+				</CenterContainer>
 			</>
 			)
 		</>

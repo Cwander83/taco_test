@@ -5,7 +5,7 @@ import './Dashboard.css';
 
 import Header from '../../components/Header/Header';
 import Auxilitary from '../../hoc/auxilitary';
-import Board from '../../components/TacoChoice/TacoChoice';
+import TacoChoice from '../../components/TacoChoice/TacoChoice';
 import TacoImage from '../../components/TacoImage/TacoImage';
 import SignOutBtn from '../../components/SignOutBtn/SingOutBtn';
 
@@ -16,7 +16,7 @@ const Dashboard = ({ history, props }) => {
 		email: '',
 		uid: '',
 	});
-	
+
 	useEffect(() => {
 		firebase.auth().onAuthStateChanged(user => {
 			if (user) {
@@ -52,7 +52,7 @@ const Dashboard = ({ history, props }) => {
 	const signOut = () => {
 		firebase.auth().signOut();
 	};
-	
+
 	const upDateTaco = x => {
 		if (user.uid)
 			firebase
@@ -68,10 +68,11 @@ const Dashboard = ({ history, props }) => {
 			<SignOutBtn out={signOut} />
 
 			<Header />
-			<h1>
-				Welcome to Dashboard<span>{user ? user.email : 'unknown'}</span>
+			
+			<h1 className="dashTitle">
+				Welcome to Dashboard, <span className='userEmail'>{user ? user.email : 'unknown'}</span>
 			</h1>
-			<Board taco={taco} />
+			<TacoChoice taco={taco} />
 			<TacoImage update={upDateTaco} />
 		</Auxilitary>
 	);

@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
-import Landing from './Landing/Landing';
+import Landing from '../pages/Landing/Landing';
 import SignUpForm from '../components/Login/SignUpForm/SignUpForm';
 import ReturnForm from '../components/Login/ReturnForm/ReturnForm';
 import Dashboard from '../pages/Dashboard/Dashboard';

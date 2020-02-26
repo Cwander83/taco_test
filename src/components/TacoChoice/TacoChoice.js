@@ -2,15 +2,15 @@ import React from 'react';
 
 import './TacoChoice.css';
 
-const board = React.memo(props => {
+const tacoChoice = React.memo(props => {
 	return (
 		<>
-			<p>
-				Your favorite taco is{' '}
-				{props.taco ? `${props.taco}` : 'well lets pick one'}
-			</p>
+			<h4 className="choice">
+				Your favorite taco is:{' '}
+				{props.taco ? ` ${props.taco} ` : ' well... lets pick one'}
+			</h4>
 		</>
 	);
 });
 
-export default board;
+export default tacoChoice;
