@@ -11,7 +11,7 @@ import PrivateRoute from '../PrivateRoute';
 function App() {
 	return (
 		<AuthProvider>
-			<Router>
+			<Router basename={`${process.env.PUBLIC_URL}/`}>
 				<div className="App">
 					<PrivateRoute exact path="/dashboard" component={Dashboard} />
 					<Route exact path="/signup" component={SignUpForm} />
