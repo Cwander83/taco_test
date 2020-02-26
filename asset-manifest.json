@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/taco_test/static/css/main.649c1175.chunk.css",
-    "main.js": "/taco_test/static/js/main.0dcac3d5.chunk.js",
-    "main.js.map": "/taco_test/static/js/main.0dcac3d5.chunk.js.map",
+    "main.css": "/taco_test/static/css/main.e4251a2e.chunk.css",
+    "main.js": "/taco_test/static/js/main.9cfdd52c.chunk.js",
+    "main.js.map": "/taco_test/static/js/main.9cfdd52c.chunk.js.map",
     "runtime-main.js": "/taco_test/static/js/runtime-main.54f09f84.js",
     "runtime-main.js.map": "/taco_test/static/js/runtime-main.54f09f84.js.map",
     "static/js/2.2d673383.chunk.js": "/taco_test/static/js/2.2d673383.chunk.js",
     "static/js/2.2d673383.chunk.js.map": "/taco_test/static/js/2.2d673383.chunk.js.map",
     "index.html": "/taco_test/index.html",
-    "precache-manifest.2a6e03a4e4047bd0e18ee9ca5fdf522d.js": "/taco_test/precache-manifest.2a6e03a4e4047bd0e18ee9ca5fdf522d.js",
+    "precache-manifest.f8ac368c31d0427929d37312bc9faf74.js": "/taco_test/precache-manifest.f8ac368c31d0427929d37312bc9faf74.js",
     "service-worker.js": "/taco_test/service-worker.js",
-    "static/css/main.649c1175.chunk.css.map": "/taco_test/static/css/main.649c1175.chunk.css.map",
+    "static/css/main.e4251a2e.chunk.css.map": "/taco_test/static/css/main.e4251a2e.chunk.css.map",
     "static/js/2.2d673383.chunk.js.LICENSE.txt": "/taco_test/static/js/2.2d673383.chunk.js.LICENSE.txt",
     "static/media/MSC.jpg": "/taco_test/static/media/MSC.30dff497.jpg",
     "static/media/alpastor.jpg": "/taco_test/static/media/alpastor.eac3fbbf.jpg",
@@ -25,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.54f09f84.js",
     "static/js/2.2d673383.chunk.js",
-    "static/css/main.649c1175.chunk.css",
-    "static/js/main.0dcac3d5.chunk.js"
+    "static/css/main.e4251a2e.chunk.css",
+    "static/js/main.9cfdd52c.chunk.js"
   ]
 }
