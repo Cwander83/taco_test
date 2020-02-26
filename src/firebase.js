@@ -1,7 +1,6 @@
-import * as firebase from 'firebase';
+import * as firebase from 'firebase/app';
 import 'firebase/auth';
-import 'firebase/firebase-firestore'
-
+import 'firebase/firebase-firestore';
 
 // Your web app's Firebase configuration
 
@@ -15,8 +14,5 @@ const firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-
-
-
 
 export default firebase;
