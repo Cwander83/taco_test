@@ -68,10 +68,14 @@ const Dashboard = ({ history, props }) => {
 			<SignOutBtn out={signOut} />
 
 			<Header />
-			
+
 			<h1 className="dashTitle">
-				Welcome to Dashboard, <span className='userEmail'>{user ? user.email : 'unknown'}</span>
+				Welcome to Dashboard,{' '}
+				<span className="userEmail">{user ? user.email : 'unknown'}</span>
 			</h1>
+			<p className="instructions">
+				click on your favorite taco, and i'll save it in the database for you
+			</p>
 			<TacoChoice taco={taco} />
 			<TacoImage update={upDateTaco} />
 		</Auxilitary>
