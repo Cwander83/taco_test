@@ -1,7 +1,7 @@
 {
 	"name": "taco_test",
-  "version": "0.1.0",
-  "homepage": "https://Cwander83.github.io/taco_test.com",
+	"version": "0.1.0",
+	"homepage": "https://cwander83.github.io/taco_test/.com",
 	"private": true,
 	"dependencies": {
 		"@testing-library/jest-dom": "^4.2.4",
