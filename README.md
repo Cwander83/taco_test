@@ -9,6 +9,6 @@ it uses firebase email/password authentication to access the database
 then saves data, for the next time user returns.
 
 ### NPM packages used
-*React-router-dom
-*React-modal
-*React-hooks-form
+* React-router-dom
+* React-modal
+* React-hooks-form
