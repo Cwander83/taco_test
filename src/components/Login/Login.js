@@ -4,6 +4,7 @@ const login = memo(props => {
 	return (
 		<>
 			<button
+			className="loginBtn"
 				onClick={() => {
 					props.openModal();
 					props.click();

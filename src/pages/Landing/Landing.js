@@ -12,7 +12,6 @@ import SignUpForm from '../../components/Login/SignUpForm/SignUpForm';
 import ReturnForm from '../../components/Login/ReturnForm/ReturnForm';
 
 const Landing = props => {
-	
 	const [modalState, setModalState] = useState(false);
 	const [signUp, setSignUp] = useState();
 
@@ -31,29 +30,29 @@ const Landing = props => {
 	return (
 		<Auxilitary>
 			<Header />
+			<img className="landingImg" alt="tacos" src={StreetTacos} />
 			<div className="section">
-				<img className="landingImg" alt="tacos" src={StreetTacos} />
-				<div className="pBox">
-					<p>
-						The <span style={{ color: 'red', fontWeight: 800 }}>Taco </span> is
-						a traditional Mexican dish served with a circular corn tortilla
-						filled with a protein, cilantro, onion, and cheese. A common form of
-						antojitos, or Mexican street food, which have spread around the
-						world. Often garnished with various condiments, such as salsa,
-						guacamole, or sour cream, and vegetables, such as lettuce, tomatoes,
-						and chiles.
-					</p>
+				<p>
+					The <span style={{ color: 'red', fontWeight: 800 }}>Taco </span> is a
+					traditional Mexican dish served with a circular corn tortilla filled
+					with a protein, cilantro, onion, and cheese. A common form of
+					antojitos, or Mexican street food, which have spread around the world.
+				</p>
+				<p>
+					Often garnished with various condiments, such as salsa, guacamole, or sour cream, and vegetables, such as lettuce, tomatoes, and chiles.
+				</p>
+
+				<div className="btnRow">
+					<Login openModal={openModal} click={x => signUpHandler(true)}>
+						Sign Up
+					</Login>
+
+					<Login openModal={openModal} click={x => signUpHandler(false)}>
+						Returning Users
+					</Login>
 				</div>
 			</div>
-			<div className="btnRow">
-				<Login openModal={openModal} click={x => signUpHandler(true)}>
-					Sign Up
-				</Login>
 
-				<Login openModal={openModal} click={x => signUpHandler(false)}>
-					Returning Users
-				</Login>
-			</div>
 			<Modal
 				modalState={modalState}
 				openModal={openModal}

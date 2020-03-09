@@ -1,12 +1,31 @@
 .title {
 	color: #e50914;
-	width: 100%;
+	width: fit-content;
 	margin-top: 30px;
 	margin-bottom: 0;
+	margin-left: 10%;
+	margin-right: auto;
 	font-size: 80px;
+	background-color: transparent;
 }
 .subTitle {
-	padding: 0;
-	margin: 0;
+	width: fit-content;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 10%;
+	margin-right: auto;
 	font-size: 26px;
+	letter-spacing: .15rem;
+	background-color: transparent;
+}
+
+
+@media (max-width: 650px) {
+.title {
+	margin-top: 70px;
+	text-align: center;
+}
+.subTitle {
+	font-size: 22px;
+}
 }
