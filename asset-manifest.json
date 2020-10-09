@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/taco_test/static/css/main.4f1ff2ef.chunk.css",
-    "main.js": "/taco_test/static/js/main.64819992.chunk.js",
-    "main.js.map": "/taco_test/static/js/main.64819992.chunk.js.map",
-    "runtime-main.js": "/taco_test/static/js/runtime-main.54f09f84.js",
-    "runtime-main.js.map": "/taco_test/static/js/runtime-main.54f09f84.js.map",
-    "static/js/2.2d673383.chunk.js": "/taco_test/static/js/2.2d673383.chunk.js",
-    "static/js/2.2d673383.chunk.js.map": "/taco_test/static/js/2.2d673383.chunk.js.map",
+    "main.css": "/taco_test/static/css/main.5f6972f6.chunk.css",
+    "main.js": "/taco_test/static/js/main.c6a7654e.chunk.js",
+    "main.js.map": "/taco_test/static/js/main.c6a7654e.chunk.js.map",
+    "runtime-main.js": "/taco_test/static/js/runtime-main.983a939f.js",
+    "runtime-main.js.map": "/taco_test/static/js/runtime-main.983a939f.js.map",
+    "static/js/2.bb968784.chunk.js": "/taco_test/static/js/2.bb968784.chunk.js",
+    "static/js/2.bb968784.chunk.js.map": "/taco_test/static/js/2.bb968784.chunk.js.map",
     "index.html": "/taco_test/index.html",
-    "precache-manifest.4e7ba007cbcfaed637f5574a15e04223.js": "/taco_test/precache-manifest.4e7ba007cbcfaed637f5574a15e04223.js",
+    "precache-manifest.3fefe0d06d313d4698a9b0cd23532843.js": "/taco_test/precache-manifest.3fefe0d06d313d4698a9b0cd23532843.js",
     "service-worker.js": "/taco_test/service-worker.js",
-    "static/css/main.4f1ff2ef.chunk.css.map": "/taco_test/static/css/main.4f1ff2ef.chunk.css.map",
-    "static/js/2.2d673383.chunk.js.LICENSE.txt": "/taco_test/static/js/2.2d673383.chunk.js.LICENSE.txt",
+    "static/css/main.5f6972f6.chunk.css.map": "/taco_test/static/css/main.5f6972f6.chunk.css.map",
+    "static/js/2.bb968784.chunk.js.LICENSE.txt": "/taco_test/static/js/2.bb968784.chunk.js.LICENSE.txt",
     "static/media/MSC.jpg": "/taco_test/static/media/MSC.30dff497.jpg",
     "static/media/alpastor.jpg": "/taco_test/static/media/alpastor.eac3fbbf.jpg",
     "static/media/asada.jpg": "/taco_test/static/media/asada.85c8c05d.jpg",
@@ -23,9 +23,9 @@
     "static/media/shrimp.jpg": "/taco_test/static/media/shrimp.71bf00c4.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.54f09f84.js",
-    "static/js/2.2d673383.chunk.js",
-    "static/css/main.4f1ff2ef.chunk.css",
-    "static/js/main.64819992.chunk.js"
+    "static/js/runtime-main.983a939f.js",
+    "static/js/2.bb968784.chunk.js",
+    "static/css/main.5f6972f6.chunk.css",
+    "static/js/main.c6a7654e.chunk.js"
   ]
 }
